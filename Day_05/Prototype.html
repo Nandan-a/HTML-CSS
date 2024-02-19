@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function makeItHot()
+            {
+                return "<FONT COLOR='red'>"+this.tostring()+"</FONT>"
+            }
+
+        </script>
+    </head>
+    <body>
+        <script>
+            String.prototype.hot = makeItHot
+            document.write("<H1>This site is on " + "FIRE".hot() + "!!</H1>")
+        </script>
+    </body>
+</html>

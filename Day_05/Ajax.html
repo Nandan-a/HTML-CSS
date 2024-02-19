@@ -1,0 +1,23 @@
+<html>
+<head>
+
+    <script>
+        var xhr;
+        function getData() {
+            xhr = new XMLHttpRequest();
+            if (xhr) {
+                xhr.open("GET", "sample.txt", true);
+                xhr.send();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        document.getElementById("lblresult").innerHTML = xhr.responseText;
+                    }
+                }
+            }} //end of callback function
+            </script>
+</head>
+<body>
+    <input type="button" onclick="getData()" value="Getresult"/>
+<div id="lblresult"></div>    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function greet(){
+            console.log("Hello world")
+            }
+            </script>
+    </head>
+<!-- 
+    <body>
+    <script src="comm.js"></script>
+    <script>
+        document.write("display message : "+msg)
+        </script>
+
+        
+        </body> -->
+        <body>
+            <script src="comm.js"></script>
+            <input type="button" id="btn"
+            value="click here"/>
+            <script>
+            btn1 = document.getElementById("btn")
+            //btn1.addEventListener('click', () =>
+            console.log("hello")
+            btn1.onclick = greet; //func in comm.js
+            </script>
+            </body>
+</html>
