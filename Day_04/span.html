@@ -1,0 +1,59 @@
+<html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function validatename(){
+                var username = document.getElementById("uname").value
+                
+               if(username== null || username == "" || username.length == 0){
+                document.getElementById("s1").innerHTML="Name required"
+                return false;}
+             else if (username.length < 5){
+                document.getElementById("s1").innerHTML="Name required"
+             return false;}
+             else {
+                document.getElementById("s1").innerHTML=" "
+                return true};  
+
+            }
+
+             function validatepass(){
+             var password = document.getElementById("pass").value
+
+             if(password== null || password == "" || password.length == 0){
+                document.getElementById("s2").innerHTML="Password required" 
+                return false;}
+             else if (password.length < 5  || password.length>10) {
+                document.getElementById("s2").innerHTML="Password required"
+             return false;}
+             else {
+                document.getElementById("s2").innerHTML=" "
+                return true};                 
+            }   
+
+            function validate(){
+                if (validatename() && validatepass())
+                return true;
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+        username : <input type="text" id="uname" >
+            <span id="s1"> </span>
+     <br>
+      
+       
+        password : <input type="password" id="pass" >
+        <span id="s2"> </span><br>
+        
+        <input type="submit" 
+         value="validate">
+        </form>
+       
+       
+    </body>
+</html>

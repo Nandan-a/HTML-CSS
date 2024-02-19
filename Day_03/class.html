@@ -1,0 +1,86 @@
+
+<!-- --------------------- -->
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class Greeter{
+                greet(){
+                    document.write("Hello world")
+                }
+
+            }
+            var g1= new Greeter()
+            g1.greet()
+        </script>
+    </body> -->
+
+<!-- ---------------------------- -->
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class Student{
+              constructor(sid,sname){
+                this.sid = sid;
+                this.sname = sname;
+              }
+              display(){
+                document.write("Student id: " + this.sid +" Student name : " +this.sname + "<br>")
+              }
+
+            }
+            var s1= new Student(101,"Siddhesh")
+            var s2 = new Student(102,"Aniket")
+            
+
+            s1.display()
+            s2.display()
+        </script>
+    </body> -->
+
+
+
+<!-- --------------inheritance-------------- -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class Student{
+              constructor(sid,sname){
+                this.sid = sid;
+                this.sname = sname;
+              }
+              display(){
+                document.write("Student id: " + this.sid +" Student name : " +this.sname + "<br>")
+              }
+
+            }
+            var s1= new Student(101,"Siddhesh")
+            var s2 = new Student(102,"Aniket")
+            
+
+            s1.display()
+            s2.display()
+
+
+            class GradStudent extends Student{
+                constructor(sid,sname,gpa){
+                    super(sid,sname)
+                    this.gpa = gpa;
+                }
+            }
+            var gs2 = new GradStudent(101,"Nandan",9.3)
+            gs2.display()
+                document.write(gs2.gpa)
+            
+        </script>
+    </body>

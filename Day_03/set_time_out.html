@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                var username = document.getElementById("uname").value
+                // console.log("button Clicked")
+                // console.log("hello",username)
+                // document.write("hello",username)
+                document.getElementById("p1").innerHTML="hello "+username
+            }   
+
+        </script>
+    </head>
+    <body>
+        <script>
+            // var f1 = function(){
+            //     alert("Hi")
+            // }
+            // setTimeout(f1,5000)
+            // <-------------------------------fat arrow method ------------------------>
+            // setTimeout(()=> alert("hiii"),5000)
+
+            // function timer(){
+            //     document.write(new Date().toString(),"<br>")
+            // }
+            // setInterval(timer,1000)
+            
+
+           </script>
+           <form >
+            Enter Radius <input type="text" id="uname" autofocus><br>
+                <input type="button" value="greet" onclick="f1()" autofocus>
+           </form>
+           <p id="p1"></p>
+    </body>
+</html>

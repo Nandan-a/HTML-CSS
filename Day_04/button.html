@@ -1,0 +1,75 @@
+<!-- <html>
+    <head>
+        <script>
+            function button(){
+                var rlist = document.getElementsByName("r1")
+                for(choose in rlist)
+                {
+                    if(rlist[choose].checked){
+                        console.log(rlist[choose].value)
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        choose Module:<br>
+        <input type="radio" name="r1" value="diot">Diot<br>
+        <input type="radio" name="r1" value="ditiss">DITISS<br>
+        <input type="radio" name="r1" value="dac">DAC <br>
+        <input type="button" value="choose" onclick="button()">
+    </body>
+</html> -->
+
+<!-- -----------------------checkbox--------------------- -->
+
+<html>
+    <head>
+        <script>
+            function button(){
+                var rlist = document.getElementsByClassName("r1")
+                for(choose in rlist)
+                {
+                    if(rlist[choose].checked){
+                        document.write(rlist[choose].value)
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        choose Module:<br>
+        <input type="checkbox" class="r1" value="diot">Diot<br>
+        <input type="checkbox" class="r1" value="ditiss">DITISS<br>
+        <input type="checkbox" class="r1" value="dac">DAC <br>
+        <input type="button" value="choose" onclick="button()">
+    </body>
+</html> 
+
+
+<!-- 
+<html>
+    <head>
+        <script>
+            function button(){
+                var str=""
+                var rlist = document.getElementsByClassName("r1")
+                for(choose in rlist)
+                {
+                    if(rlist[choose].checked){
+                        str += (rlist[choose].value)
+                    }
+                }
+                
+                console.log(" ",str)
+            }
+        </script>
+    </head>
+    <body>
+        choose Module:<br>
+        <input type="checkbox" class="r1" value="diot">Diot<br>
+        <input type="checkbox" class="r1" value="ditiss">DITISS<br>
+        <input type="checkbox" class="r1" value="dac">DAC <br>
+        <input type="button" value="choose" onclick="button()">
+    </body>
+</html> -->

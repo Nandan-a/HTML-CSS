@@ -1,0 +1,125 @@
+<!-- ----------innerhtml read---------------------- -->
+<!-- <html>
+    <head>
+ 
+        <h1>Alert</h1>
+        <script>
+            function f1(){
+                var a = alert(document.getElementById("p1").innerHTML)
+            }   
+
+        </script>
+    </head>
+    <body>
+        <p id="p1" >
+            This is para
+        </p>
+        <button onclick=f1()>My button</button>
+    </body>
+</html> -->
+
+<!-- ---------------------------write------------------------------ -->
+<!-- 
+<html>
+    <head>
+ 
+        <h1>Alert</h1>
+        <script>
+            function f1(){
+                
+            //   var p= (document.getElementById("p1").innerHTML)
+            //   alert(p)
+              document.getElementById("p1").innerHTML="New content"
+            }   
+
+        </script>
+    </head>
+    <body>
+        <p id="p1">
+            This is para
+        </p>
+     
+        <button onclick=f1()>My button</button>
+    </body>
+</html> -->
+<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+ <!-- =============DOM MANIPULATION=================================== -->
+
+<!-- ---------------------------ovwrwritting tags------------------------ -->
+<!-- <html>
+    <head>
+ 
+        <h1>Change contents of all</h1>
+        <script>
+            function f1(){
+                var plist = document.getElementsByTagName("p")
+
+                for( para of plist)
+                    para.innerHTML="New content !!"
+            }   
+
+        </script>
+    </head>
+    <body>
+        <p >This is para 1</p>
+        <p >This is para 2</p>
+        <p >This is para 3</p>
+        <button onclick=f1()>My button</button>
+    </body>
+</html> -->
+
+<!-- ------------------------------particular id changing after button preseed-------------------- -->
+
+<!-- <html>
+    <head>
+ 
+        <h1>Change contents of all</h1>
+        <script>
+            function f1(){
+                var para = document.getElementById("p1")
+                para.style.color='blue'
+                //para.style.background="yellow"
+                //para.style.font="italic bold 40px helvatica "
+
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        <p >This is para 1</p>
+        <p id="p1">This is para 2</p>
+        <p >This is para 3</p>
+        <button onclick=f1()>My button</button>
+    </body>
+</html> -->
+
+<!-- -------------------------------------over mouse------------------------------------------- -->
+
+<html>
+    <head>
+ 
+        <h1>Change contents of all</h1>
+        <script>
+            function f1(){
+                var para = document.getElementById("p1")
+                para.style.color='blue'
+                para.style.background="yellow"
+                para.style.font="italic bold 40px helvatica "
+
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        <p >This is para 1</p>
+        <p id="p1" onmouseover=f1()>This is para 2</p>
+        <p >This is para 3</p>
+       
+    </body>
+</html>
+
+
+

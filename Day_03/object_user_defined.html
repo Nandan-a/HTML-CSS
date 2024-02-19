@@ -1,0 +1,152 @@
+
+<!-- ----------------------object intialilizer---------------------- -->
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var student = {sname:"Nandan",age:21}
+
+            console.log(student.sname , student.age)    //read
+            student.sname = "Madhu"                    //write
+            console.log(student.sname , student.age)
+        </script>
+    </body>
+</html> -->
+
+<!-- ============================================================= -->
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var person = {
+                pname : "Nandan",
+                age : 21,
+                vacinated : true,
+                hobbies : ['coding','Gaming','Sports'],
+                address : {city : 'Bengaluru', State : 'Karnataka' }
+
+            }
+
+            console.log(person.pname , person.age)    
+            console.log(person.hobbies[1] )
+            console.log( person.address.State)
+
+        </script>
+    </body>
+</html> -->
+
+<!-- ============================================================= -->
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var book = {
+                bookid : 1001,
+                bname : "Core Java",
+                author : "Kishori",
+                price :400,          
+            }
+
+            console.log(book.bookid , book.bname , book.author, book.price)    
+           
+        </script>
+    </body>
+</html> -->
+
+<!-- ======================================using function expr================================= -->
+
+<!-- <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var book = {
+                bookid : 1001,
+                bname : "Core Java",
+                author : "Kishori",
+                price :400,
+                
+                display : function(){
+                    //document.write(this.bookid , this.bname , this.author, this.price)
+                    console.log(this.bookid , this.bname , this.author, this.price) 
+                }
+                
+            }
+
+            book.display()   
+            book.bname = "Learning Java"
+            book.display()   
+
+           
+        </script>
+    </body>
+</html> -->
+<!-- --------------------------------------------------------------------- -->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var book = {
+                bookid : 1001,
+                bname : "Core Java",
+                author : "Kishori",
+                price :400,
+                
+                display : function(){
+                    //document.write(this.bookid , this.bname , this.author, this.price)
+                    console.log(this.bookid , this.bname , this.author, this.price) 
+                },
+                incPricee : function(amount){
+                    this.price = this.price + amount
+                }
+            
+                
+            }
+
+            book.display()   
+            book.bname = "Learning Java"
+            book.display()   
+            book.incPricee(200) 
+
+           
+        </script>
+    </body>
+</html>
+
+<!-- ================================================================= -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+            var person = [
+                {pid : 1001,},
+                {bname : "Core Java",},
+               { author : "Kishori",},
+               { price :400,}
+                
+        ]
+           
+        </script>
+    </body>
+</html>

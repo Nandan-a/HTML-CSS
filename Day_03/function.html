@@ -1,0 +1,69 @@
+
+--------------------parseint-----------------------
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            document.write(parseInt("123") + "<br>")          //123
+            document.write(parseInt("123abc") + "<br>")       //123
+            document.write(parseInt("123.45") + "<br>")         //123
+            document.write(parseInt("123abc456") + "<br>")      //123
+            document.write(parseInt("abc123") + "<br>")     //NaN: no numeric
+        </script>
+    </body>
+</html>
+
+
+---------------------isfinite--------------------
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            document.write(isFinite(123) + "<br>")          //true
+            document.write(isFinite(-123.15) + "<br>")       //true
+            document.write(isFinite("Hello123") + "<br>")         //false
+            document.write(isFinite("Hello") + "<br>")      //false
+            document.write(isFinite(0) + "<br>")     //true
+        </script>
+    </body>
+</html>
+
+---------------------isNan--------------------  
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            document.write(isNaN('123') + "<br>")          //false
+            document.write(isNaN('22/11/2023') + "<br>")       //true
+            document.write(isNaN('hi123') + "<br>")         //true
+            document.write(isNaN("Hello") + "<br>")      //true
+            document.write(isNaN(0) + "<br>")     //false
+        </script>
+    </body>
+</html> 
+
+--------------------parsefloat-----------------------  
+
+  <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            document.write(parseFloat("123") + "<br>")          //123
+            document.write(parseFloat("123abc") + "<br>")       //123
+            document.write(parseFloat("123.45") + "<br>")         //123.45
+            document.write(parseFloat("123abc456") + "<br>")      //123
+            document.write(parseFloat("abc123") + "<br>")     //NaN: no numeric
+        </script>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+<!-- ----------form validation--------------------- -->
+
+<!-- <html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function f1(){
+                var username = document.getElementById("uname").value
+
+               if(username== null || username == "" || username.length == 0)
+                alert("Username required") 
+             else if (username.length < 5)
+             alert("Name should be 5 characters")
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        username : <input type="text" id="uname"> <br>
+        <input type="button" 
+         value="validate"
+          onclick="f1()">
+       
+    </body>
+</html> -->
+
+
+<!-- ------------------age--------------------------------- -->
+
+<!-- <html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function f1(){
+                var username = document.getElementById("uname").value
+                
+               if(username== null || username == "" || username.length == 0)
+                alert("Username required") 
+             else if (username.length < 5)
+             alert("Name should be 5 characters")
+
+             var age = document.getElementById("age").value
+             if(isNaN(age))
+             alert("Age should be number")
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        username : <input type="text" id="uname"> <br>
+        age : <input type="text" id="age"> <br>
+        <input type="button" 
+         value="validate"
+          onclick="f1()">
+       
+    </body>
+</html> -->
+
+<!-- -------------------- -->
+
+<!-- <html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function f1(){
+                var username = document.getElementById("uname").value
+                
+               if(username== null || username == "" || username.length == 0)
+                alert("Username required") 
+             else if (username.length < 5)
+             alert("Name should be 5 characters")
+
+             var password = document.getElementById("pass").value
+
+             if(password== null || password == "" || password.length == 0)
+                alert("Password required") 
+             else if (password.length < 5  || password.length>10) 
+             alert("password  should be 5 to 10 characters")
+
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        username : <input type="text" id="uname"> <br> -->
+<!--       
+         password : <input type="text" id="pass"><br> -->
+        <!-- password : <input type="password" id="pass"><br>
+        
+        <input type="button" 
+         value="validate"
+          onclick="f1()">
+       
+    </body>
+</html> --> 
+
+<!-- ============================validating password and name ============================ -->
+
+<!-- <html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function validatename(){
+                var username = document.getElementById("uname").value
+                
+               if(username== null || username == "" || username.length == 0)
+                alert("Username required") 
+             else if (username.length < 5)
+             alert("Name should be 5 characters")
+            }
+
+             function validatepass(){
+             var password = document.getElementById("pass").value
+
+             if(password== null || password == "" || password.length == 0)
+                alert("Password required") 
+             else if (password.length < 5  || password.length>10) 
+             alert("password  should be 5 to 10 characters")
+
+                  
+            }   
+
+        </script>
+    </head>
+    <body>
+        username : <input type="text" id="uname" > <br>
+      
+        password : <input type="text" id="pass"><br> -->
+        <!-- password : <input type="password" id="pass" ><br>
+        
+        <input type="button" 
+         value="validate"
+         onclick="validatename() ,validatepass()"
+       >
+       
+    </body>
+</html> -->
+
+<html>
+    <head>
+ 
+        <h1>validating HTML4</h1>
+        <script>
+            function validatename(){
+                var username = document.getElementById("uname").value
+                
+               if(username== null || username == "" || username.length == 0){
+                alert("Username required") 
+                return false;}
+             else if (username.length < 5){
+             alert("Name should be 5 characters")
+             return false;}
+                else return true;
+
+            }
+
+             function validatepass(){
+             var password = document.getElementById("pass").value
+
+             if(password== null || password == "" || password.length == 0){
+                alert("Password required") 
+                return false;}
+             else if (password.length < 5  || password.length>10) {
+             alert("password  should be 5 to 10 characters")
+             return false;}
+             else return true;                 
+            }   
+
+            function validate(){
+                if (validatename() && validatepass())
+                return true;
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+        username : <input type="text" id="uname" > <br>
+      
+       
+        password : <input type="password" id="pass" ><br>
+        
+        <input type="button" 
+         value="validate"
+         onclick="validatename() ,validatepass()">
+        </form>
+       
+       
+    </body>
+</html>
+

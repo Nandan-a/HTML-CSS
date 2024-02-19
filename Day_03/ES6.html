@@ -1,0 +1,113 @@
+<!-- -----------variable that varies-------- -->
+<!-- <html>
+    <head>
+        <script>
+       
+        </script>
+    </head>
+    <body>
+        <script>
+           var a=10
+           a++
+           console.log(a)
+    
+            
+        </script>
+    </body>
+</html> -->
+
+<!-- --------const----------- -->
+<!-- <html>
+    <head>
+        <script>
+       
+        </script>
+    </head>
+    <body>
+        <script>
+           const a=10
+        //    a++       if u use this u will get error
+           console.log(a)
+    
+            
+        </script>
+    </body>
+</html> -->
+
+<!-- --------let----------- -->
+<!-- <html>
+    <head>
+        <script>
+       
+        </script>
+    </head>
+    <body>
+        <script>
+           if(true)
+           {
+               let a=10
+
+               console.log(a)            //a is defined only between box
+           }
+           console.log(a)
+    
+            
+        </script>
+    </body>
+</html> -->
+
+
+<!-- --------Fat arrow----------- -->
+<!-- <html>
+    <head>
+        <title>Hello</title>
+        <script>
+            // var greet= function greet (){
+            //     document.write("Hello")
+            // }
+
+           
+        </script>
+    </head>
+    <body>
+        <script> 
+             var greet=() => document.write("Hello lamda <br>")           
+            greet()
+
+            var greet2=(username) => document.write("Hello " + username)
+            greet2("panda")
+        </script>
+    </body> -->
+<!-- </html> -->
+
+<!-- --------Fat arrow----------- -->
+<html>
+    <head>
+        <script>
+            var add=(a,b)=>a+b;
+            function strOps(str){
+                document.write(str.length)
+                document.write(str.charAt(0))
+                document.write(str.toUpperCase())
+            }
+            var strOps = function(str){
+                document.write(str.length)
+                document.write(str.charAt(0))
+                document.write(str.toUpperCase())
+            }
+
+            var strOps = str =>
+            {
+                document.write(str.length)
+                document.write(str.charAt(0))
+                document.write(str.toUpperCase())
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write(add(20,30))
+            strOps(prompt("Enter str"))
+        </script>
+    </body>
+</html>
