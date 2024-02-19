@@ -1,0 +1,8 @@
+var kaka = require("./calc.js")
+console.log("sum",kaka.add(20,30))
+console.log("diff",kaka.sub(20,30))
+console.log(kaka.mul(20,30))
+console.log(kaka.div(20,30))
+console.log(kaka.square(20))
+console.log(kaka.min(20,30))
+console.log(kaka.max(20,30))
