@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var list=$("ol").val()
+                $("ol").prepend(function(){
+                    $("li").prepend("<ul>"+"<li>"+list+"</li>"+"</ul>")
+                    // $("li").split()
+                    // var val=($("li").html("<ul>"+"<li>"+ "John"+"</li>"+"</ul>"))
+                // alert($(this).html())
+              })
+        })
+
+
+        </script>
+
+    </head>
+    <body>
+        <h3> Members of my Group are </h3>
+        <ol id="list">
+            <li>John</li>
+            <li>Steve</li>
+            <li>Ben</li>
+            <li>Damon</li>
+            <li>Ian</li>
+        </ol>
+    </body>
+</html>
+

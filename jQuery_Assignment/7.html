@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                $("#opt1").click(function(){
+                    var selected_option=$("#opt1").val()
+                    // $("#s1").html(selected_option)
+                    alert(selected_option)
+                    // alert($(":input[1]").val("#o1"))
+
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+        <select id="opt1">
+            <option >Option-1</option>
+            <option >Option-2</option>
+            <option >Option-3</option>
+        </select>
+        <span id="s1"></span>
+    
+    </body>
+</html>

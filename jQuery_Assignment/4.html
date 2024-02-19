@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                $("#div1").css("background-color","lightblue")
+                // $("#p2,#p3").css("color","blue")
+               $ ("#s1").css("background-color","orange")
+               $ ("#s1").html("changed!!!!")
+            })
+        </script>
+    </head>
+
+    <body>
+        <div id="div1">
+            <fieldset>
+            <p>Div#target</p>
+            <fieldset id="s1" style="width: max-content;" > 
+            
+            <span >span(change me!)</span>
+            </fieldset>
+            </fieldset>
+        </div>
+    </body>
+    </html>
