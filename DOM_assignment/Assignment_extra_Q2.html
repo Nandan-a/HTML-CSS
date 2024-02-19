@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Document</title>
+    <script>
+    function fun(){
+        str=""
+        var val1 = [document.getElementById("p1").value,
+                    document.getElementById("p2").value,
+                    document.getElementById("p3").value,
+                    document.getElementById("p4").value,
+                    document.getElementById("p6").value]
+        var radio =document.getElementsByName("r1")
+        var checkbox = document.getElementsByName("c1")
+        
+        for(i in val1)
+
+            {
+            // document.getElementById("text").innerHTML =(val1[0])
+
+                str += val1[i] + "<br>"
+            }
+            document.getElementById("text").innerHTML = str
+        
+        var rad = ""
+        for(i=0;i<radio.length;i++){
+        
+            if(radio[i].checked==true)
+                rad += (radio[i].value)
+        }
+        var stt =""
+        for(i=0;i<checkbox.length;i++){
+
+        if(checkbox[i].checked==true)
+            stt += (checkbox[i].value)
+            
+        document.getElementById("text").innerHTML = stt  
+        }
+        document.getElementById("text").innerHTML = str+rad+stt
+
+        
+    
+
+    }
+</script>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 22%;">
+            <table>
+                <tr>
+                    <td rowspan="2">Username
+                        <tr><td><input type="text" required id="p1"></td></tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Password
+                        <tr><td><input type="password" id="p2"></td></tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">City of Employment
+                        <tr><td><input type="text" id="p3"></td></tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Web Server
+                        <tr><td>
+                            <select id="p4">
+                                <option>--Choose a server--</option>
+                                <option >--java.com</option>
+                                <option>--python.com</option>
+                                <option>--kite.com</option>
+                            </select>
+                        </td></tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Please specify your role 
+                        <tr><td id="p5">
+                            <input type="radio" name="r1" value="Admin">Admin<br>
+                            <input type="radio" name="r1" value="Engineer">Engineer<br>
+                            <input type="radio" name="r1" value="Manager">Manager<br>
+                            <input type="radio" name="r1" value="Guest">Guest<br>
+                            
+                        </td></tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Single Sign-on to the following 
+                        <tr><td id="p6">
+                            <input type="checkbox" name="c1" value="Mail">Mail<br>
+                            <input type="checkbox" name="c1" value="Paroll">Paroll<br>
+                            <input type="checkbox" name="c1" value="Self-Service">Self-Service<br>
+                        </td></tr>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td align="center" colspan="2"><input type="button" value="Login" onclick="fun()">
+                    <input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <span id="text"></span>
+</body>
+</html>

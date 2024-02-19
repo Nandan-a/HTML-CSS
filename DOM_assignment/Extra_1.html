@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script>
+            
+            function validate()
+            {
+                var password = document.getElementById("pass1").value
+                var password2 = document.getElementById("pass2").value
+               
+                if(password != password2){
+                    
+                    document.getElementById("sp1").innerHTML=("password not matching")
+                    return false
+                }
+                else if((password == null || password =="")&& (password2 ==null || password2 == ""))
+                {
+                    document.getElementById("pass1").innerHTML=("password must not be NULL")
+                    document.getElementById("pass2").innerHTML=("password must not be NULL")
+                    return false
+                }
+                else return true
+                
+            }   
+            function namevalidate(){
+            var name = document.getElementById("ename").value
+            if(name== null)
+            {
+                document.getElementById("en1").innerHTML=("Name should not be NULL")
+                return false
+            }
+            else if (username.length < 5)
+            {
+                document.getElementById("en1").innerHTML=("Name should not be less than 5 CHARACTERS")
+                return false
+            }
+            else return true
+        }
+
+        </script>
+    </head>
+    <body>
+        
+        <fieldset style="width: 58%; border-radius: 20px;">
+            <h2 align="center">Create Account</h2>
+            <hr>
+            <table>
+                <th>First name*:</th>
+                <th>Last name:</th>
+                <br>
+                <tr>
+                <td><input type="text" id="ename"  required placeholder="Enter your first name" >
+                    <span id="en1"></span>
+                </td>
+                <td><input type="text" placeholder="Enter your last name"></td>
+                </tr>
+                <th colspan="2" size="56" class="r1">Email*</th>
+                <tr>
+                    <td colspan="2" size="56"><input type="email" placeholder="Enter your Email"></td>
+                </tr>
+                <th>Password*:</th>
+                <th>Confirm Password:</th>
+                <br>
+                <tr>
+                <td ><input type="password" id="pass1" required placeholder="Enter your password"><br>
+                <td><input type="password" id="pass2"  required placeholder="Enter your password again">
+                    <span id="sp1" class="w1"></span></td></td>
+                </tr>
+                <th>Gender:</th>
+                <th>Hobbies:</th>
+                <tr>
+                    <td ><input type="radio" name="r1">Male
+                    <input type="radio" name="r1">Female</td>
+                    <td><input type="checkbox">Music
+                    <input type="checkbox">Sports
+                    <input type="checkbox">Travel
+                    <input type="checkbox">Movies</td>
+                </tr>
+                    <th>Source of Income</th>
+                    <th>Income</th>
+                    <tr>
+                        <th>
+                            <select>
+                                <option value="Employed">Employed</option>
+                                <option>Unemployed</option>
+                            </select>
+                            <td>
+                                <input type="range">
+                            </td>
+                        </th>
+                    </tr>
+
+
+
+                    <th>Upload Profile Picture</th>
+                    <th>Age</th>
+                    <tr>
+                        <td>
+                            <input type="file" name="" id="">
+                        </td>
+                        <td><input type="number" min="22" max="60"></td>
+                        </td>
+                    </tr>
+                    
+                    <th>Bio</th>
+                    <tr>
+                        <td colspan="2"><textarea name="" id="" cols="52" rows="10"></textarea></tr>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <form>
+                            <td colspan="2" align="right"><input type="submit" onclick="return validate() , namevalidate()" value="Create" style="background-color: #52B69A; color: white;"></td>
+
+                        </form>
+                    </tr>
+                </table>
+                
+        </fieldset>
+    </body>
+</html>

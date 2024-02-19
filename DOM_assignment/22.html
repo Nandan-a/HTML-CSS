@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            fieldset{
+                background: #941010;
+            } 
+           body{
+            background-color: aqua;
+           }
+           #p1{
+            background-color: blue;
+           }
+        </style>
+        
+        <script>
+            function f1(){
+                var num1 = parseInt(document.getElementById("uname").value)
+                
+              
+                document.getElementById("p1").value=num1*3.14
+                document.getElementById("p2").value=num1*3.14*2
+            }   
+
+        </script>
+    </head>
+    <body>
+        <script>
+     
+            
+
+           </script>
+           <fieldset style="width: max-content;" >
+               <form >
+              Radius: <input type="number" size="3" id="uname" ><br>
+               
+                <input type="button" value="Display" onclick="f1()">
+               </form>
+               Area: <input type="text" id="p1" readonly><br>
+               Circumference: <input type="text" id="p2" readonly>
+
+           </fieldset>
+           
+    </body>
+</html>

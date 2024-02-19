@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            function table(){
+                var str =""
+                var startno =parseInt(document.getElementById("r1").value)
+                var mulno =parseInt(document.getElementById("r2").value)
+                var endno =parseInt(document.getElementById("r3").value)
+                for(i=startno;i<=endno;i++)
+                {
+                    str += i+" times " + mulno+" = "+ (i) * (mulno)+ "\n"
+                    // startno +=1
+                    // str+=str
+
+                }
+                document.getElementById("t1").innerHTML=str
+            //     function reset(){
+            //             document.getElementById("t1").innerHTML= ""
+            //         }    
+            }
+
+        </script>
+    </head>
+    <body>
+        <fieldset style="width: max-content;">
+            <!-- <form > -->
+                Start Number :
+                <input type="number" max="10" min="1" size="3" id="r1" value="1">
+                End Number :
+                <input type="number" max="10" min="1" value="10" id="r3">
+                Multiply by :
+                <input type="number" min="1" max="1000" id="r2">
+                <br><br>
+
+                <div align="center">
+                    <button type="submit" onclick="table()">Times table</button>
+                    <br><br>
+                    <button type="reset" onclick="reset()">Reset</button>
+                    <br><br>
+                </div>
+
+                <textarea  cols="50" rows="10" id="t1" ></textarea>
+
+            <!-- </form> -->
+            
+        </fieldset>
+    </body>
+</html>

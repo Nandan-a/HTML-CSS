@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            var arr = []
+            function f1(){
+                var username = document.getElementById("name").value
+                var password = document.getElementById("pass").value
+                var email = document.getElementById("email").value
+
+                var nan={
+                    "name" : username,
+                    "password": password,
+                    "email" : email
+                }
+                arr.push(nan)
+                var str = "<table border='1'>"+ "<tr><th>"+"Username"+"</th><th>"+"Password"+"</th><th>"+"Email"+"</th></tr>"
+                
+                for(i of arr)
+                {
+
+                    str+= "<tr><td>"+i.name +"</td><td>"+ i.password +"</td><td>"+ i.email+"</td></tr>"
+                    // if(arr.length%2==0){
+                    // str+= "<tr><td>"+i.name +"</td><td>"+ i.password +"</td><td>"+ i.email+"</td></tr>"}
+
+                }
+                
+                str+="</table>"
+                document.getElementById("para").innerHTML=str
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Registration form</h1>
+        <hr>
+        <form >
+            Username :
+            <input type="text" id="name"><BR>
+            Password :
+            <input type="password" id="pass"><BR>
+            Email :
+            <input type="email" id="email"><BR></BR>
+            <input type="button" onclick="f1()" value="ADD">
+        </form>
+        <span id="para">
+        </span>
+    </body>
+</html> 
+
