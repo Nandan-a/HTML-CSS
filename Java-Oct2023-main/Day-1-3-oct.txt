@@ -1,0 +1,131 @@
+
+mfr : Tupperware
+price  : 250
+capacity : 1 lit
+material : plastic
+
+- Abstraction - retain what is essential, throw out what isnt
+- Encapsulation - hiding of data + beh
+- Hierarchy :
+  - Inheritance : is-a, class hierarchy
+  - Composition : has-a, object hierarchy
+- Polymorphism: One name, Many forms
+  - static 
+  - dynamic
+
+
+Base
+
+Derived
+
+
+
+
+Superclass
+
+Subclass
+
+
+GF : Land
+F : Land + house
+You : Land,House + flat + merc
+
+
+Hardware platform?
+
+OS + processor
+Windows + Intel pentium
+Unix + AMD Athlon
+
+
+Datatypes:
+- Primitive
+- Reference
+
+Primitive Datatypes: 8:
+- 6 Numeric Types
+  - Int types
+    * byte, short, int, long
+  - float types (decimal)
+    * float, double
+- 2 Misc
+  * char
+  * boolean
+
+char ch1 = 'a';
+char ch2 = '*';
+char ch3 = '7';
+char ch4 = ' ';
+
+
+Java char follows Unicode Char set
+char == 2 bytes
+
+
+op1 + op2
+
+10 + 20 => 30
+
+"Sum is " + 30
+
+
+//Type casting
+int i = 10;
+		
+float f = i;  //implicit type casting
+	
+int j = (int)f;  //explicit type casting
+
+
+		for(int i = 1; i < 11; i++) {
+			System.out.println(2 + " * " + i + "  =  " + (2*i));
+		}
+		
+		int j = 1;
+		/*while(j < 11) {
+			System.out.println(j*2);
+			j++;
+		}*/
+		
+		do {
+			System.out.println(j*2);
+			j++;
+		}
+		while (j < 11);
+
+
+-------------------------
+
+public class MethodDemo {
+
+	public void greet() {
+		System.out.println("Hello World!!");
+	}
+	
+	public void greetUser(String uname) {
+		System.out.println("Hello " + uname);
+	}
+	
+	public int add(int a, int b) {
+		return a + b;
+	}
+	
+	public static void main(String[] args) {
+		MethodDemo demo = new MethodDemo();
+		demo.greet();
+		demo.greetUser("Siya");
+		System.out.println("Sum is " + demo.add(10, 20));
+	}
+}
+
+-------------------------------------
+
+Scanner sc = new Scanner(System.in);
+
+sc.nextInt()
+
+
+
+
+
+

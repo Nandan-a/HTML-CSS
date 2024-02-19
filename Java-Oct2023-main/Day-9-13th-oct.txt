@@ -1,0 +1,265 @@
+innerHTML  -> JS prop  -> read/write
+
+
+<html>
+  <head>
+    <script>
+      function greet(){  //event handler
+         var name = document.getElementById("uname").value
+          document.getElementById("p1").innerHTML = "Hello " + name
+      }
+    </script>
+  </head>
+    <body>
+        <form>
+          Username : <input type="text" id="uname"> <br>
+          <input type="button" 
+                 value="greet user"
+                 onclick="greet()">
+        </form>
+        <span id="p1" style="background-color: cyan;"></span>
+        
+    </body>
+</html>
+
+-------------------------delaing with radio buttons  --------------------------------------------------
+
+<html>
+  <head>
+    <script>
+      function greet(){  //event handler
+        var s="";
+         var name = document.getElementById("uname").value
+          
+          var gender = document.getElementsByName("r1");
+          for(i=0;i<gender.length;i++){
+            if(gender[i].checked){
+              s = gender[i].value;
+            }
+          }
+
+          document.getElementById("p1").innerHTML = "Hello " + s + "  " + name
+      }
+    </script>
+  </head>
+    <body>
+        <form>
+          Username : <input type="text" id="uname"> <br>
+          Gender : 
+          <input type="radio" id="r1" name="r1" value="Male">Male
+          <input type="radio" id="r1" name="r1" value=Female">Female
+
+          <br>
+          <input type="button" 
+                 value="greet user"
+                 onclick="greet()">
+        </form>
+        <span id="p1" style="background-color: cyan;"></span>
+        
+    </body>
+</html>
+
+------------------------------------------------
+
+
+--------  form validation ----------------
+
+<html>
+  <head>
+    <script>
+      function validateName(){  
+         var name = document.getElementById("uname").value
+         if(name == "" || name == null || name.length == 0){
+            document.getElementById("s1").innerHTML = ("name is mandatory")
+            return false;
+         }
+          else if(name.length < 5){
+            document.getElementById("s1").innerHTML = ("name should be > 5 chars")
+          return false;
+          }
+         return true;
+      }
+
+      function validatePassword(){    
+          var pass = document.getElementById("passwd").value
+          if(pass == "" || pass == null || pass.length == 0){
+            alert("password is mandatory")
+            return false;
+          }
+          else if(pass.length < 5 || pass.length > 10){
+             alert("Incorrect password size")
+             return false;
+          }
+          return true;
+      }
+
+      function validate(){
+        if(validateName() && validatePassword())
+            return true;
+        else  return false;
+      }
+    </script>
+  </head>
+    <body>
+        <form onsubmit="return validate()">
+          Username : <input type="text" id="uname" > <span id="s1" style="color: red;"></span><br>
+          Password : <input type="password" id="passwd" > <br>
+          <br>
+          <input type="submit">
+        </form>
+        <span id="p1"></span>
+        
+    </body>
+</html>
+
+
+
+---------------------------------------------
+
+JDBC:
+
+.ZIP - compress multiples files
+.JAR - Java ARchive
+       *.class
+
+javac file
+java file
+jar
+
+
+0) Bring relevant jar into build path
+
+1) Register the driver
+   - DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+  - Class.forName(com.mysql.cj.jdbc.Driver)
+
+2) Obtain connection to database
+   - DriverManager.getConnection(url, username, password)
+
+3) Create a statement
+
+   - Statement stmt = conn.createStatement();
+
+4) Execute the statment!!
+
+   - stmt.execute(sql)   XXX
+   - int count = stmt.executeUpdate(sql)    -->> executing a DML, DDL statement ie - insert, update, delete
+   - stmt.executeQuery(sql)     -->> executing a query, DQL!! ie select
+
+
+Types of drivers:
+- Type-1   JDBC-ODBC bridge driver
+- Type-2   native 
+- Type-3  pure n/w protocol oriented 
+- Type-4  Pure Driver
+
+URL:
+jdbc:<db>:path to teh databse
+
+
+
+
+Statement
+
+PreparedStatement
+
+CallableStatement
+
+
+
+public vod transferFunds(Acct a, Acct b, double amount){
+      
+      a.bal = a.bal - amount;   update
+      b.bal = b.bal + amount;   update
+
+}
+
+
+try{
+    conn.autoCommit(false);
+    //sql-1  insert
+    //sql-2  delete
+    .......
+   conn.commit()
+}
+catch(SqlException se){
+   conn.rollback();
+}
+
+
+
+http://someserver.com/login.html
+
+
+http://localhost:8085/FGWebApp/login.html
+
+file:///D:/HSBC-Oct2023/Web/jsdemo.html
+
+Web Application : app available over the web
+ egs - Amazon, IRTC, BookMyShow, Myntra, facebook, youtube
+
+- return static / dynamic HTML
+
+- human centric
+
+
+
+Web service: Service available over the web!!
+- application-centric
+
+- data : text, json, xml
+
+Web Service:
+- SOAP-based
+- RESTful web service
+
+
+REST:
+1) URL's
+
+RESTless URL--- verb, action-oriented
+
+http://www.techarticles.com/mypages/getarticle?id=12345
+http://www.techarticles.com/mypages/delarticle?id=12345
+http://www.techarticles.com/mypages/updatearticle?id=12345
+http://www.techarticles.com/mypages/getAllarticles
+
+
+RESTful URL:  -- nouns, resource-oriented
+
+http://www.techarticles.com/article/12345
+
+
+2) HTTP methods:
+- GET   - fetch/read
+- POST  - create
+- PUT   - update
+- DELETE - delete
+
+
+
+CRUD!!!
+
+
+- HEAD
+- PATCH
+
+
+
+http://www.techarticles.com/article/12345    --> GET
+http://www.techarticles.com/article/12345    --> DELETE
+
+
+
+
+http://localhost:8082/course/courses
+http://localhost:8082/course/courses/101  
+
+
+
+
+
+
+
+
+

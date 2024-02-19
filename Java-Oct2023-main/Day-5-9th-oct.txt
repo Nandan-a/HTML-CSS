@@ -1,0 +1,94 @@
+Java 8:
+- lambda
+- Stream
+- functional interface
+- interface - can contain abstract methods but also concrete methods
+
+
+functional interface: an interface that contains exactly 1 abstract method!!
+
+@FunctionalInterface
+
+Rules for Lambda:
+
+1. () -> single line code : takes no args and has single line of code
+2. single-arg -> single line of code
+3. (multiple-args) -> single line of code
+4. single-arg -> {multiple lines of code}
+
+
+
+try{
+   int c = 10/0;
+   String str = null;
+   sysout(str.length);
+}
+
+catch(Exception e){
+   sysout(e.getMessage();  //catch-all!!
+}
+
+catch(NullPointerException npe){
+   sysout(npe.getMessage());
+}
+
+catch(ArithmaticExpection ae){
+   sysout(ae.getMessage();
+} 
+
+boolean openflag=false;
+
+try{
+    openfile("a.txt");  //set flag=true
+    readFile();
+    editFile();
+    saveFile();
+}
+catch(Exception e){
+   ....
+}
+finally{
+  if(flag)
+     closeFile();
+}
+
+Standard Exceptions in Java api
+User-def / custom exceptions
+
+
+Size of my bookstore
+7
+
+MaxLengthReachedException
+BookStoreLimitReachedExceotion
+
+
+JDK 1.0, 1.1
+classes :
+ 
+java.util - Date, Vector, BitSet, Hashtable, Dictionary.....
+Legacy classes
+
+JDK 1.2:
+Collection API / Framework
+
+
+add()
+size()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

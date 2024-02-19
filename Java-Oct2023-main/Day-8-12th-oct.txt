@@ -1,0 +1,297 @@
+class Server implements Serialazable{
+   String ipaddr;
+   transient String location;
+   String admin;
+}
+
+Server s1 = new Server("192.168.1.1","Pune","Shrilata");
+
+
+modifiers : final, abstarct, static, transient
+
+try(new Resource()){
+   subRes = Resource.m1();
+
+}
+catch(){...}
+--------------------------
+try(BufferedReader br = new BufferedReader(new FileReader("a.txt"))){
+   br.readLine();
+.....
+
+}
+catch(){...}
+
+
+-----------------------
+
+Thread
+- run()
+- sleep()
+- start()
+- setName(), getName()
+- Thread.currentThread()
+- setPriority(), getPriority()
+
+
+
+Priority level:
+
+
+
+class MyThread implements Runnable{
+
+
+
+}
+
+
+Thread implements Runnable{
+
+  public void run(){}
+
+}
+
+
+Thread t1 = new Thread(r1);
+
+
+
+Formatting tags:
+<b>, <i>, <u>, <sup>, <sub>, <font>, 
+
+<tag></tag>
+<b>
+<html></html>
+
+attribute?  
+key="value"
+
+<body>
+<body bgcolor="lightgreen">
+
+<img src="a.gif" height="100" width="200">
+
+
+Container tags:
+- div
+- p
+- span
+
+<div>
+
+</div>
+
+<p>   </p>
+
+
+
+HTML4 form elements: 9 + 3
+<input type="____">
+
+Text-based:
+- text
+- password
+- hidden
+
+Button-based:
+- button
+- submit
+- reset
+
+Misc-based:
+- checkbox
+- radio
+- file
+
+
+- textarea
+- drop down
+- <button>
+
+
+HTML5: 13 new form elements
+<input type="____">
+
+- email
+- number
+- range
+- date
+- color
+- url
+- tel
+
+
+
+http://www.someserver.com/myapp/login.html
+
+file:///D:/HSBC-Oct2023/Web/first.html?uname=shrilata&passwd=secret
+
+
+
+
+CSS:
+- External SS .css
+   <head><link ref=""></head>
+- Internal/embedded SS
+
+
+selectors:
+- tag selector
+- id selector
+- class selector
+
+     h1{...}, p{....}, tr{......}
+
+
+Javascript: Scripting language, 
+Why?
+- Client side validations
+- Event handling
+- DOM manipulation
+
+JS:
+- part-1 : JS fundamentals
+- part-2 : DOM 
+
+loosely typed
+
+Functions:
+- user-defined functions
+- standard functions
+parseInt(), parseFloat(), isFinite(), isNan()
+
+
+console.log(parseInt("123")) //123
+            console.log(parseInt("123abc456"))  //123
+            console.log(parseInt("123.45"))  //123
+            console.log(parseInt("abc123"))  //NaN
+
+            console.log(parseFloat("123.45"))  //123.45
+
+-----------------------------------------------
+
+
+---------------scope of vars -------------
+var company="hsbc";  //global
+
+           function f1(){
+              document.write("company in function " + company)
+              var ename = "Siya" //local
+              document.write("name in function " + ename)
+
+           }
+           f1()
+           document.write("company outside function " + company)
+           document.write("name outside function " + ename)
+
+--------------------------------
+
+Objects:
+- every JS obj exposes both - props, methods
+- all props in a js obj are read/write
+
+Objects:
+- Core/pre-defined objects 
+- user defined object
+
+
+obj.property
+obj.method(args)
+
+
+Core/pre-defined objects:
+string, math, date, array, number, boolean, regexp,.....
+
+
+String:
+- length
+
+
+var d1 = new Date()
+setXXX(), getXXX()
+
+var d1 = new Date()
+           console.log(d1)
+           console.log(d1.getDate())
+           console.log(d1.getDay())
+           console.log(d1.getFullYear())
+           console.log(d1.getMonth())
+
+           d1.setDate(21)
+           d1.setFullYear(2025)
+           d1.setMonth(11)
+
+           console.log(d1)
+------------------------
+
+var arr = [11,22,33,44,55]
+
+          arr.push(66)
+          console.log(arr)
+
+          arr.push(77,88,99,111)
+          console.log(arr)
+
+----------------------------------------
+
+user defined object:
+- object constructor
+- Object Initializer
+- function constructor
+- class!! (JS 6)
+
+
+
+//Object Initializer
+          //JSON - JavaScript Object Notation
+
+          var person = {pname : "Kritika", age : 21}
+
+         // console.log(person.pname, person.age)  //reading props
+
+          person.pname = "Shivangi"  //writing into the prop
+          person.age = 22
+
+          //console.log(person.pname, person.age) 
+
+          var stud = {
+            sname : "Harshita",  //string
+            age : 22,            //number
+            vaccinated : true,   //boolean
+            hobbies : ["Reading", "Coding", "Research"], //arr - obj
+            address : {city : "Delhi", state : "Har"}  //obj!!
+          }
+
+          console.log(stud.sname, stud.age, stud.vaccinated)
+          console.log(stud.hobbies[1])
+          console.log(stud.address.state)
+
+
+----------------------------
+
+ var sname = prompt("Enter stud name")
+          console.log(sname)
+
+----------------------------------------
+
+
+
+<html>
+</html>
+
+
+window.alert("msg")
+
+alert("msg")
+
+
+
+
+
+
+
+
+
+
+

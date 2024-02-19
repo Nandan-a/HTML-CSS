@@ -1,0 +1,96 @@
+Cons rules :
+- same as class name
+- cons cannot return anything back not even void
+- defualt no-argument cons
+
+Access specifier: private, public, protected, default
+
+
+Java class - cons, toString, get/set methods
+
+
+
+Accessor/mutator methods
+
+getter/setter
+
+Java naming conventions:
+
+class : noun, start with upper case
+eg : Box, Person, Employee, Book, SalariedEmployee, BookManagerDemo
+
+variables : noun, firsrt letter always lower case, camelCase
+eg : length, age, personName, empFirstName
+
+methods: verb, camelCase
+
+eg : calculate(), displayDimension(), displatAllDetails(), calcVolume() 
+
+
+
+Box b1 = new Box();
+
+First class Objects:
+
+- String
+   String s1 = new String("hello");
+   String s2 = "hello";
+
+- array
+   int[] arr = new int[10];
+   int[] arr = {1,2,3,4,5};
+
+
+
+
+
+Method signature:
+acess-specifier  ret-type   name-methid(args-list)
+
+memory mgt - automatic
+
+
+1) Box b1;
+1.a) b1 = new Box(10,5,20); 
+2) Box b2 = new Box(1,2,3);
+3) Box b3 = b1;
+4) b2 = null;
+5) b1 = null;
+
+
+address space - stack, heap
+
+Garbage collector  deamon process
+
+
+System.gc()  - will NOT run GC, only provides a hint to GC
+
+finalize(){
+   //code to free up resoucres
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

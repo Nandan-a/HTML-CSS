@@ -1,0 +1,100 @@
+Modifiers in Java : static, final, abstract
+
+static:
+  - var
+  - method
+  - class  XXX
+  - block  XXX
+
+static int i = 10
+
+public static void m1(){....}
+
+
+
+instance /non-static method -----
+obj.method()
+
+static method----
+obj.method()
+method()
+Class-name.method()
+
+
+
+String.join()
+Integer.parseInt()
+
+
+GF : parenting(){
+        //strict
+    }
+
+F : parenting(){
+        //discipline, loving
+    }
+
+Me : parenting(){
+        //friend
+    }
+
+
+WageEmp calcSal(){....}
+
+
+SalesEmp calcSal(){ new impl}
+
+
+Method overloading ----> static polymorphism 
+- single class
+- return type does matter
+- args should be diff
+
+
+Method overriding -----> dynamic polymorphism 
+- parent-child class
+- method sign should be eaxctly the same, incl ret type
+
+
+final:
+- var : creates a constant     final int i = 10 
+- method : method cannot be overridden!!
+- class : class cannot be subclassed
+
+
+class MyOwnString extends String
+
+
+
+Object : cosmic superclass
+
+class Emp extends Object{
+
+.....
+}
+
+class WageEmp extends Emp{
+   ....
+}
+
+Object emp = new Emp();
+
+
+Employee e1 = new Employee(1,"aaa");
+Employee e2 = new Employee(1,"aaa");
+
+e1.equals(e2)
+
+this.id == e2.id
+
+
+abstract:
+- class
+- method
+
+
+
+
+
+
+
